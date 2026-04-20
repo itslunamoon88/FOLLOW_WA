@@ -20,33 +20,36 @@ body{
 
   /* 🔥 BACKGROUND GAMBAR + OVERLAY */
   background:
-  linear-gradient(rgba(2,6,23,0.85), rgba(2,6,23,0.9)),
-  url('https://i.imgur.com/Pk3xOzT.jpeg') center/cover no-repeat fixed;
+    linear-gradient(rgba(2,6,23,0.85), rgba(2,6,23,0.9)),
+    url('https://i.imgur.com/Pk3xOzT.jpeg') center/cover no-repeat fixed;
 }
 
-/* 🔥 GLOW TAMBAHAN */
+/* 🔥 GLOW KIRI */
 body::before{
   content:'';
   position:fixed;
   width:500px;
   height:500px;
   background:radial-gradient(circle,#38bdf8,transparent 70%);
-  top:-100px;
-  left:-100px;
+  top:-120px;
+  left:-120px;
   filter:blur(120px);
   opacity:0.25;
+  z-index:0;
 }
 
+/* 🔥 GLOW KANAN */
 body::after{
   content:'';
   position:fixed;
   width:500px;
   height:500px;
   background:radial-gradient(circle,#22c55e,transparent 70%);
-  bottom:-100px;
-  right:-100px;
+  bottom:-120px;
+  right:-120px;
   filter:blur(120px);
-  opacity:0.2;
+  opacity:0.25;
+  z-index:0;
 }
 
 /* CONTAINER */
@@ -54,6 +57,8 @@ body::after{
   max-width:500px;
   margin:auto;
   padding:20px 15px;
+  position:relative;
+  z-index:1;
 }
 
 /* CARD */
@@ -213,7 +218,7 @@ setInterval(()=>{
   time--;
 },1000);
 
-let names = ["Budi","Andi","Rizky","Doni","Agus","Fajar","Ilham"];
+let names = ["Budi","Andi","Rizky","Doni","Agus","Fajar","Ilham","Reza","Dika"];
 setInterval(()=>{
   let popup = document.getElementById("popup");
   let name = names[Math.floor(Math.random()*names.length)];
