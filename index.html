@@ -4,12 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- OG -->
 <meta property="og:title" content="MAUSLOT EXCLUSIVE">
 <meta property="og:description" content="Bonus harian & event spesial untuk semua member">
 <meta property="og:image" content="https://i.imgur.com/0iwFBoB.jpeg">
 <meta property="og:url" content="https://itslunamoon88.github.io/FOLLOW_WA/">
-<meta property="og:type" content="website">
 
 <title>MAUSLOT EXCLUSIVE</title>
 
@@ -18,10 +16,12 @@ body{
   margin:0;
   font-family:'Segoe UI',sans-serif;
   color:white;
+  overflow-x:hidden;
 
   background:
-  linear-gradient(rgba(2,6,23,0.85), rgba(2,6,23,0.9)),
-  url('https://i.imgur.com/Pk3xOzT.jpeg') center/cover no-repeat fixed;
+  radial-gradient(circle at 20% 20%, rgba(56,189,248,0.25), transparent 40%),
+  radial-gradient(circle at 80% 30%, rgba(34,197,94,0.2), transparent 40%),
+  linear-gradient(135deg,#020617,#020617,#0f172a);
 }
 
 /* CONTAINER */
@@ -36,8 +36,9 @@ body{
   background:rgba(15,23,42,0.9);
   border-radius:20px;
   padding:20px;
-  box-shadow:0 10px 50px rgba(0,0,0,.8);
+  box-shadow:0 0 40px rgba(56,189,248,.2);
   border:1px solid rgba(56,189,248,.4);
+  animation:fadeIn 1s ease;
 }
 
 /* TITLE */
@@ -48,33 +49,18 @@ body{
   color:#38bdf8;
 }
 
-.sub{
-  text-align:center;
-  font-size:13px;
-  color:#cbd5f5;
-  margin-bottom:10px;
-}
-
 /* IMAGE */
 .hero img{
   width:100%;
   border-radius:14px;
   margin-top:10px;
-}
-
-/* 🔥 BOX DALAM (INI YANG KAMU MAU) */
-.inner-box{
-  background:rgba(2,6,23,0.75);
-  border:1px solid rgba(56,189,248,.25);
-  border-radius:14px;
-  padding:12px;
-  margin-top:12px;
-  box-shadow:0 0 15px rgba(56,189,248,.2);
+  box-shadow:0 0 20px rgba(56,189,248,.5);
 }
 
 /* INFO */
 .info{
   text-align:center;
+  margin-top:10px;
   font-size:13px;
 }
 
@@ -85,32 +71,31 @@ body{
 .btn{
   display:block;
   text-align:center;
-  margin-top:10px;
+  margin-top:12px;
   padding:14px;
   border-radius:30px;
   font-weight:bold;
   text-decoration:none;
   color:#020617;
+  animation:pulse 2s infinite;
 }
 
 .telegram{
   background:linear-gradient(90deg,#38bdf8,#2563eb);
-  box-shadow:0 0 20px rgba(56,189,248,.6);
 }
 
 .whatsapp{
   background:linear-gradient(90deg,#22c55e,#15803d);
-  box-shadow:0 0 20px rgba(34,197,94,.6);
 }
 
 /* COUNTDOWN */
 #countdown{
   text-align:center;
-  margin-top:10px;
+  margin-top:12px;
   color:#f87171;
 }
 
-/* 🔥 FLOAT GIF SUPER BESAR */
+/* FLOAT GIF */
 .float-gif{
   position:fixed;
   bottom:15px;
@@ -119,16 +104,41 @@ body{
 }
 
 .float-gif img{
-  width:240px; /* 🔥 LEBIH BESAR */
+  width:240px;
   border-radius:12px;
   box-shadow:0 0 40px rgba(34,197,94,.9);
-  animation:floatAnim 2s infinite ease-in-out;
+  animation:floatAnim 1.8s infinite ease-in-out;
 }
 
+/* POPUP */
+.popup{
+  position:fixed;
+  bottom:100px;
+  left:10px;
+  background:#020617;
+  padding:10px 14px;
+  border-radius:10px;
+  font-size:12px;
+  box-shadow:0 0 15px rgba(56,189,248,.5);
+  display:none;
+}
+
+/* ANIMATIONS */
 @keyframes floatAnim{
   0%{transform:translateY(0);}
   50%{transform:translateY(-12px);}
   100%{transform:translateY(0);}
+}
+
+@keyframes pulse{
+  0%{box-shadow:0 0 10px rgba(255,255,255,.3);}
+  50%{box-shadow:0 0 25px rgba(255,255,255,.8);}
+  100%{box-shadow:0 0 10px rgba(255,255,255,.3);}
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
 }
 </style>
 </head>
@@ -139,42 +149,40 @@ body{
   <div class="card">
 
     <div class="title">MAUSLOT EXCLUSIVE</div>
-    <div class="sub">Bonus Harian & Event Spesial</div>
 
     <div class="hero">
       <img src="https://i.imgur.com/KnFWtRZ.png">
     </div>
 
-    <!-- 🔥 BAGIAN DALAM DENGAN BACKGROUND -->
-    <div class="inner-box">
-
-      <div class="info">
-        🎯 Bonus cair setiap hari – langsung gas!
-        <div class="live">🔥 124 Member sedang online</div>
-        <div class="wd">💰 WD terakhir Rp2.350.000</div>
-      </div>
-
-      <a href="https://urlmsshorten.com/telegram-official" class="btn telegram">
-        📩 MASUK TELEGRAM
-      </a>
-
-      <a href="https://urlmsshorten.com/whatsapp-official" class="btn whatsapp">
-        💬 HUBUNGI WHATSAPP
-      </a>
-
-      <div id="countdown"></div>
-
+    <div class="info">
+      🎯 Bonus cair setiap hari – langsung gas!
+      <div class="live">🔥 124 Member sedang online</div>
+      <div class="wd">💰 WD terakhir Rp2.350.000</div>
     </div>
+
+    <a href="https://urlmsshorten.com/telegram-official" class="btn telegram">
+      📩 MASUK TELEGRAM
+    </a>
+
+    <a href="https://urlmsshorten.com/whatsapp-official" class="btn whatsapp">
+      💬 HUBUNGI WHATSAPP
+    </a>
+
+    <div id="countdown"></div>
 
   </div>
 </div>
 
-<!-- 🔥 FLOATING GIF -->
+<!-- FLOAT -->
 <a href="https://urlmsshorten.com/whatsapp-official" class="float-gif">
   <img src="https://itslunamoon88.github.io/FOLLOW_WA/MS018.gif">
 </a>
 
+<!-- POPUP -->
+<div id="popup" class="popup"></div>
+
 <script>
+// countdown
 let time = 780;
 setInterval(()=>{
   let m = Math.floor(time/60);
@@ -183,6 +191,19 @@ setInterval(()=>{
   "⏰ Promo berakhir dalam: " + m + ":" + (s<10?"0"+s:s);
   time--;
 },1000);
+
+// popup random
+let names = ["Budi","Andi","Rizky","Doni","Agus","Fajar","Ilham"];
+setInterval(()=>{
+  let randomName = names[Math.floor(Math.random()*names.length)];
+  let amount = Math.floor(Math.random()*3000000)+500000;
+  let popup = document.getElementById("popup");
+
+  popup.innerHTML = "💰 "+randomName+" WD Rp"+amount.toLocaleString();
+  popup.style.display="block";
+
+  setTimeout(()=>popup.style.display="none",3000);
+},5000);
 </script>
 
 </body>
