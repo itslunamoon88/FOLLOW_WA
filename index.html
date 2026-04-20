@@ -18,13 +18,12 @@ body{
   color:white;
   overflow-x:hidden;
 
-  /* 🔥 BACKGROUND GAMBAR + OVERLAY */
   background:
     linear-gradient(rgba(2,6,23,0.85), rgba(2,6,23,0.9)),
     url('https://i.imgur.com/uqWjwyk.jpeg') center/cover no-repeat fixed;
 }
 
-/* 🔥 GLOW KIRI */
+/* GLOW */
 body::before{
   content:'';
   position:fixed;
@@ -35,10 +34,8 @@ body::before{
   left:-120px;
   filter:blur(120px);
   opacity:0.25;
-  z-index:0;
 }
 
-/* 🔥 GLOW KANAN */
 body::after{
   content:'';
   position:fixed;
@@ -49,7 +46,6 @@ body::after{
   right:-120px;
   filter:blur(120px);
   opacity:0.25;
-  z-index:0;
 }
 
 /* CONTAINER */
@@ -135,6 +131,7 @@ body::after{
   border-radius:12px;
   box-shadow:0 0 50px rgba(34,197,94,1);
   animation:floatAnim 1.5s infinite ease-in-out, glowAnim 2s infinite;
+  cursor:pointer;
 }
 
 /* POPUP */
@@ -151,7 +148,7 @@ body::after{
   animation:slideIn 0.5s ease;
 }
 
-/* ANIMASI */
+/* ANIMATION */
 @keyframes floatAnim{
   0%{transform:translateY(0) scale(1);}
   50%{transform:translateY(-15px) scale(1.05);}
@@ -194,17 +191,23 @@ body::after{
       <div class="wd">💰 WD terakhir Rp2.350.000</div>
     </div>
 
-    <a href="#" class="btn telegram">📩 MASUK TELEGRAM</a>
-    <a href="#" class="btn whatsapp">💬 HUBUNGI WHATSAPP</a>
+    <!-- 🔥 BUTTON FIX -->
+    <a href="https://urlmsshorten.com/telegram-official" class="btn telegram" target="_blank">
+      📩 MASUK TELEGRAM
+    </a>
+
+    <a href="https://urlmsshorten.com/whatsapp-official" class="btn whatsapp" target="_blank">
+      💬 HUBUNGI WHATSAPP
+    </a>
 
     <div id="countdown"></div>
 
   </div>
 </div>
 
+<!-- 🔥 FLOAT GIF FIX -->
 <a href="https://urlmsshorten.com/livechat-mauslot" class="float-gif" target="_blank">
   <img src="https://itslunamoon88.github.io/FOLLOW_WA/MS018.gif">
-</a>
 </a>
 
 <div id="popup" class="popup"></div>
