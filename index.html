@@ -19,7 +19,6 @@ body{
   font-family:'Segoe UI',sans-serif;
   color:white;
 
-  /* 🔥 BACKGROUND IMAGE + GRADIENT */
   background:
   linear-gradient(rgba(2,6,23,0.85), rgba(2,6,23,0.9)),
   url('https://i.imgur.com/Pk3xOzT.jpeg') center/cover no-repeat fixed;
@@ -34,12 +33,11 @@ body{
 
 /* CARD */
 .card{
-  background:rgba(15,23,42,0.85);
+  background:rgba(15,23,42,0.9);
   border-radius:20px;
   padding:20px;
   box-shadow:0 10px 50px rgba(0,0,0,.8);
-  backdrop-filter:blur(8px);
-  border:1px solid rgba(56,189,248,.3);
+  border:1px solid rgba(56,189,248,.4);
 }
 
 /* TITLE */
@@ -50,18 +48,44 @@ body{
   color:#38bdf8;
 }
 
+.sub{
+  text-align:center;
+  font-size:13px;
+  color:#cbd5f5;
+  margin-bottom:10px;
+}
+
 /* IMAGE */
 .hero img{
   width:100%;
   border-radius:14px;
-  margin-top:15px;
+  margin-top:10px;
 }
+
+/* 🔥 BOX DALAM (INI YANG KAMU MAU) */
+.inner-box{
+  background:rgba(2,6,23,0.75);
+  border:1px solid rgba(56,189,248,.25);
+  border-radius:14px;
+  padding:12px;
+  margin-top:12px;
+  box-shadow:0 0 15px rgba(56,189,248,.2);
+}
+
+/* INFO */
+.info{
+  text-align:center;
+  font-size:13px;
+}
+
+.live{ color:#22c55e; }
+.wd{ color:#facc15; }
 
 /* BUTTON */
 .btn{
   display:block;
   text-align:center;
-  margin-top:12px;
+  margin-top:10px;
   padding:14px;
   border-radius:30px;
   font-weight:bold;
@@ -71,30 +95,39 @@ body{
 
 .telegram{
   background:linear-gradient(90deg,#38bdf8,#2563eb);
+  box-shadow:0 0 20px rgba(56,189,248,.6);
 }
 
 .whatsapp{
   background:linear-gradient(90deg,#22c55e,#15803d);
+  box-shadow:0 0 20px rgba(34,197,94,.6);
 }
 
-/* 🔥 FLOAT GIF BESAR */
+/* COUNTDOWN */
+#countdown{
+  text-align:center;
+  margin-top:10px;
+  color:#f87171;
+}
+
+/* 🔥 FLOAT GIF SUPER BESAR */
 .float-gif{
   position:fixed;
-  bottom:20px;
-  right:20px;
+  bottom:15px;
+  right:10px;
   z-index:999;
 }
 
 .float-gif img{
-  width:160px; /* 🔥 INI YANG DIPERBESAR */
-  border-radius:20px;
-  box-shadow:0 0 35px rgba(34,197,94,.9);
+  width:240px; /* 🔥 LEBIH BESAR */
+  border-radius:12px;
+  box-shadow:0 0 40px rgba(34,197,94,.9);
   animation:floatAnim 2s infinite ease-in-out;
 }
 
 @keyframes floatAnim{
   0%{transform:translateY(0);}
-  50%{transform:translateY(-10px);}
+  50%{transform:translateY(-12px);}
   100%{transform:translateY(0);}
 }
 </style>
@@ -106,18 +139,32 @@ body{
   <div class="card">
 
     <div class="title">MAUSLOT EXCLUSIVE</div>
+    <div class="sub">Bonus Harian & Event Spesial</div>
 
     <div class="hero">
       <img src="https://i.imgur.com/KnFWtRZ.png">
     </div>
 
-    <a href="https://urlmsshorten.com/telegram-official" class="btn telegram">
-      📩 MASUK TELEGRAM
-    </a>
+    <!-- 🔥 BAGIAN DALAM DENGAN BACKGROUND -->
+    <div class="inner-box">
 
-    <a href="https://urlmsshorten.com/whatsapp-official" class="btn whatsapp">
-      💬 HUBUNGI WHATSAPP
-    </a>
+      <div class="info">
+        🎯 Bonus cair setiap hari – langsung gas!
+        <div class="live">🔥 124 Member sedang online</div>
+        <div class="wd">💰 WD terakhir Rp2.350.000</div>
+      </div>
+
+      <a href="https://urlmsshorten.com/telegram-official" class="btn telegram">
+        📩 MASUK TELEGRAM
+      </a>
+
+      <a href="https://urlmsshorten.com/whatsapp-official" class="btn whatsapp">
+        💬 HUBUNGI WHATSAPP
+      </a>
+
+      <div id="countdown"></div>
+
+    </div>
 
   </div>
 </div>
@@ -126,6 +173,17 @@ body{
 <a href="https://urlmsshorten.com/whatsapp-official" class="float-gif">
   <img src="https://itslunamoon88.github.io/FOLLOW_WA/MS018.gif">
 </a>
+
+<script>
+let time = 780;
+setInterval(()=>{
+  let m = Math.floor(time/60);
+  let s = time%60;
+  document.getElementById("countdown").innerHTML =
+  "⏰ Promo berakhir dalam: " + m + ":" + (s<10?"0"+s:s);
+  time--;
+},1000);
+</script>
 
 </body>
 </html>
