@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- OPEN GRAPH -->
+<!-- OG -->
 <meta property="og:title" content="MAUSLOT EXCLUSIVE">
 <meta property="og:description" content="Bonus harian & event spesial untuk semua member">
 <meta property="og:image" content="https://i.imgur.com/0iwFBoB.jpeg">
@@ -18,13 +18,11 @@ body{
   margin:0;
   font-family:'Segoe UI',sans-serif;
   color:white;
-  overflow-x:hidden;
 
+  /* 🔥 BACKGROUND IMAGE + GRADIENT */
   background:
-  radial-gradient(circle at 20% 20%, rgba(56,189,248,0.2), transparent 40%),
-  radial-gradient(circle at 80% 30%, rgba(34,197,94,0.15), transparent 40%),
-  radial-gradient(circle at 50% 80%, rgba(59,130,246,0.15), transparent 40%),
-  linear-gradient(135deg,#020617,#020617,#0f172a);
+  linear-gradient(rgba(2,6,23,0.85), rgba(2,6,23,0.9)),
+  url('https://i.imgur.com/Pk3xOzT.jpeg') center/cover no-repeat fixed;
 }
 
 /* CONTAINER */
@@ -36,11 +34,11 @@ body{
 
 /* CARD */
 .card{
-  background:rgba(15,23,42,0.8);
+  background:rgba(15,23,42,0.85);
   border-radius:20px;
   padding:20px;
   box-shadow:0 10px 50px rgba(0,0,0,.8);
-  backdrop-filter:blur(10px);
+  backdrop-filter:blur(8px);
   border:1px solid rgba(56,189,248,.3);
 }
 
@@ -49,9 +47,7 @@ body{
   text-align:center;
   font-size:20px;
   font-weight:900;
-  background:linear-gradient(90deg,#38bdf8,#ffffff,#38bdf8);
-  -webkit-background-clip:text;
-  color:transparent;
+  color:#38bdf8;
 }
 
 /* IMAGE */
@@ -59,18 +55,7 @@ body{
   width:100%;
   border-radius:14px;
   margin-top:15px;
-  box-shadow:0 0 25px rgba(56,189,248,.4);
 }
-
-/* INFO */
-.info{
-  text-align:center;
-  margin-top:10px;
-  font-size:13px;
-}
-
-.live{ color:#22c55e; }
-.wd{ color:#facc15; }
 
 /* BUTTON */
 .btn{
@@ -82,26 +67,17 @@ body{
   font-weight:bold;
   text-decoration:none;
   color:#020617;
-  transition:.3s;
 }
 
-.btn:hover{
-  transform:scale(1.05);
-}
-
-/* TELEGRAM */
 .telegram{
   background:linear-gradient(90deg,#38bdf8,#2563eb);
-  box-shadow:0 0 20px rgba(56,189,248,.6);
 }
 
-/* WHATSAPP */
 .whatsapp{
   background:linear-gradient(90deg,#22c55e,#15803d);
-  box-shadow:0 0 20px rgba(34,197,94,.6);
 }
 
-/* FLOAT GIF */
+/* 🔥 FLOAT GIF BESAR */
 .float-gif{
   position:fixed;
   bottom:20px;
@@ -110,15 +86,15 @@ body{
 }
 
 .float-gif img{
-  width:110px;
-  border-radius:50%;
-  box-shadow:0 0 25px rgba(34,197,94,.9);
+  width:160px; /* 🔥 INI YANG DIPERBESAR */
+  border-radius:20px;
+  box-shadow:0 0 35px rgba(34,197,94,.9);
   animation:floatAnim 2s infinite ease-in-out;
 }
 
 @keyframes floatAnim{
   0%{transform:translateY(0);}
-  50%{transform:translateY(-8px);}
+  50%{transform:translateY(-10px);}
   100%{transform:translateY(0);}
 }
 </style>
@@ -135,12 +111,6 @@ body{
       <img src="https://i.imgur.com/KnFWtRZ.png">
     </div>
 
-    <div class="info">
-      🎯 Bonus cair setiap hari – langsung gas!
-      <div class="live">🔥 124 Member sedang online</div>
-      <div class="wd">💰 WD terakhir Rp2.350.000</div>
-    </div>
-
     <a href="https://urlmsshorten.com/telegram-official" class="btn telegram">
       📩 MASUK TELEGRAM
     </a>
@@ -152,7 +122,7 @@ body{
   </div>
 </div>
 
-<!-- FLOATING GIF -->
+<!-- 🔥 FLOATING GIF -->
 <a href="https://urlmsshorten.com/whatsapp-official" class="float-gif">
   <img src="https://itslunamoon88.github.io/FOLLOW_WA/MS018.gif">
 </a>
