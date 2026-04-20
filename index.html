@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -18,10 +18,35 @@ body{
   color:white;
   overflow-x:hidden;
 
+  /* 🔥 BACKGROUND GAMBAR + OVERLAY */
   background:
-  radial-gradient(circle at 20% 20%, rgba(56,189,248,0.25), transparent 40%),
-  radial-gradient(circle at 80% 30%, rgba(34,197,94,0.2), transparent 40%),
-  linear-gradient(135deg,#020617,#0f172a);
+  linear-gradient(rgba(2,6,23,0.85), rgba(2,6,23,0.9)),
+  url('https://i.imgur.com/Pk3xOzT.jpeg') center/cover no-repeat fixed;
+}
+
+/* 🔥 GLOW TAMBAHAN */
+body::before{
+  content:'';
+  position:fixed;
+  width:500px;
+  height:500px;
+  background:radial-gradient(circle,#38bdf8,transparent 70%);
+  top:-100px;
+  left:-100px;
+  filter:blur(120px);
+  opacity:0.25;
+}
+
+body::after{
+  content:'';
+  position:fixed;
+  width:500px;
+  height:500px;
+  background:radial-gradient(circle,#22c55e,transparent 70%);
+  bottom:-100px;
+  right:-100px;
+  filter:blur(120px);
+  opacity:0.2;
 }
 
 /* CONTAINER */
@@ -92,7 +117,7 @@ body{
   color:#f87171;
 }
 
-/* 🔥 FLOAT GIF BARBAR */
+/* FLOAT GIF */
 .float-gif{
   position:fixed;
   bottom:15px;
@@ -172,16 +197,13 @@ body{
   </div>
 </div>
 
-<!-- FLOAT GIF -->
 <a href="#" class="float-gif">
   <img src="https://itslunamoon88.github.io/FOLLOW_WA/MS018.gif">
 </a>
 
-<!-- POPUP -->
 <div id="popup" class="popup"></div>
 
 <script>
-// countdown
 let time = 780;
 setInterval(()=>{
   let m = Math.floor(time/60);
@@ -191,8 +213,7 @@ setInterval(()=>{
   time--;
 },1000);
 
-// popup random WD
-let names = ["Budi","Andi","Rizky","Doni","Agus","Fajar","Ilham","Reza","Dika"];
+let names = ["Budi","Andi","Rizky","Doni","Agus","Fajar","Ilham"];
 setInterval(()=>{
   let popup = document.getElementById("popup");
   let name = names[Math.floor(Math.random()*names.length)];
