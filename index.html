@@ -4,198 +4,440 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta property="og:title" content="🔥 BONUS 100% HARI INI SAJA!">
-<meta property="og:description" content="💸 Banyak member WD hari ini! Slot terbatas, jangan sampai ketinggalan!">
-<meta property="og:image" content="https://itslunamoon88.github.io/FOLLOW_WA/bonus100.png">
-<meta property="og:url" content="https://itslunamoon88.github.io/FOLLOW_WA/">
+<title>MAUSLOT VIP</title>
 
-<title>MAUSLOT EXCLUSIVE</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
 body{
-  margin:0;
-  font-family:'Segoe UI',sans-serif;
-  color:#fff;
-  background:
-    linear-gradient(rgba(2,6,23,0.45), rgba(2,6,23,0.55)),
-    url('https://i.imgur.com/uqWjwyk.jpeg') center/cover no-repeat fixed;
+    min-height:100vh;
+    overflow:hidden;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
 }
 
-.container{max-width:500px;margin:auto;padding:18px;}
-.card{
-  background:rgba(15,23,42,0.9);
-  border-radius:20px;
-  padding:18px;
-  text-align:center;
-  box-shadow:0 0 40px rgba(56,189,248,.25);
-  border:1px solid rgba(56,189,248,.35);
+/* BACKGROUND */
+
+.bg{
+    position:fixed;
+    inset:0;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.78)),
+    url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1974&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    filter:blur(2px);
+    transform:scale(1.05);
 }
 
-.title{font-size:20px;font-weight:900;color:#38bdf8;}
-.hero img{width:100%;border-radius:12px;margin-top:10px;}
-
-.warning{
-  margin-top:10px;
-  color:#facc15;
-  font-weight:bold;
-  animation:blink 1s infinite;
+.bg::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top,
+    rgba(37,99,235,.35),
+    transparent 40%);
 }
 
-.live{color:#22c55e;margin-top:6px;}
-.wd{color:#facc15;}
+/* FLOATING MONEY */
 
-.btn{
-  display:block;
-  margin-top:12px;
-  padding:14px;
-  border-radius:30px;
-  font-weight:bold;
-  cursor:pointer;
-  animation:pulse 1.5s infinite;
+.money span{
+    position:absolute;
+    font-size:26px;
+    animation:float 10s linear infinite;
+    opacity:.35;
 }
 
-.telegram{background:linear-gradient(90deg,#38bdf8,#2563eb);}
-.whatsapp{background:linear-gradient(90deg,#22c55e,#15803d);}
+.money span:nth-child(1){left:10%;top:100%;animation-delay:0s;}
+.money span:nth-child(2){left:25%;top:100%;animation-delay:2s;}
+.money span:nth-child(3){left:40%;top:100%;animation-delay:4s;}
+.money span:nth-child(4){left:60%;top:100%;animation-delay:1s;}
+.money span:nth-child(5){left:80%;top:100%;animation-delay:3s;}
 
-#countdown{margin-top:10px;color:#f87171;font-weight:bold;}
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+    }
+    100%{
+        transform:translateY(-120vh) rotate(360deg);
+    }
+}
 
-.float-gif{
-  position:fixed;
-  bottom:12px;
-  right:10px;
-  z-index:999;
-}
-.float-gif img{
-  width:240px;
-  border-radius:12px;
-  box-shadow:0 0 40px rgba(34,197,94,.9);
-  cursor:pointer;
-}
+/* POPUP */
 
 .popup{
-  position:fixed;
-  bottom:110px;
-  left:10px;
-  background:#020617;
-  padding:10px 14px;
-  border-radius:12px;
-  font-size:12px;
-  box-shadow:0 0 15px rgba(56,189,248,.6);
-  display:none;
+    position:relative;
+    width:95%;
+    max-width:520px;
+    border-radius:38px;
+    overflow:hidden;
+    background:
+    linear-gradient(145deg,
+    rgba(8,15,35,.96),
+    rgba(5,10,20,.98));
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(16px);
+    box-shadow:
+    0 0 60px rgba(37,99,235,.35),
+    0 0 120px rgba(250,204,21,.10);
+    animation:show .7s ease;
 }
 
-.money{
-  position:fixed;
-  top:-50px;
-  font-size:22px;
-  animation:fall 4s linear infinite;
+@keyframes show{
+    from{
+        opacity:0;
+        transform:translateY(40px) scale(.95);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
 }
 
-@keyframes fall{
-  0%{transform:translateY(0);}
-  100%{transform:translateY(110vh);}
+/* TOP */
+
+.top{
+    padding:26px 26px 20px;
+    text-align:center;
 }
 
-@keyframes pulse{
-  0%{box-shadow:0 0 10px rgba(255,255,255,.3);}
-  50%{box-shadow:0 0 25px rgba(255,255,255,.9);}
-  100%{box-shadow:0 0 10px rgba(255,255,255,.3);}
+.vip-badge{
+    display:inline-block;
+    padding:10px 22px;
+    border-radius:999px;
+    background:
+    linear-gradient(135deg,#facc15,#f59e0b);
+    color:#000;
+    font-size:13px;
+    font-weight:800;
+    box-shadow:
+    0 0 25px rgba(250,204,21,.35);
 }
 
-@keyframes blink{
-  0%,100%{opacity:1;}
-  50%{opacity:.3;}
+.top-title{
+    margin-top:16px;
+    font-size:38px;
+    line-height:1;
+    font-weight:900;
+    background:
+    linear-gradient(to bottom,#fff,#facc15,#f59e0b);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
+
+.top-sub{
+    margin-top:10px;
+    color:#cbd5e1;
+    font-size:14px;
+}
+
+/* VIP BANNER */
+
+.vip-banner{
+    margin:0 24px;
+    border-radius:28px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:
+    0 0 30px rgba(250,204,21,.12);
+}
+
+.vip-banner img{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+/* INFO */
+
+.info{
+    padding:22px 26px;
+    text-align:center;
+}
+
+.warning{
+    color:#facc15;
+    font-weight:700;
+    font-size:16px;
+}
+
+.online{
+    margin-top:14px;
+    color:#4ade80;
+    font-size:15px;
+}
+
+.withdraw{
+    margin-top:6px;
+    color:#fcd34d;
+    font-size:15px;
+}
+
+/* BONUS BOX */
+
+.bonus-wrap{
+    padding:0 24px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.bonus{
+    position:relative;
+    overflow:hidden;
+    padding:22px;
+    border-radius:24px;
+    background:
+    linear-gradient(145deg,#111827,#0f172a);
+    border:1px solid rgba(255,255,255,.06);
+}
+
+.bonus::before{
+    content:'';
+    position:absolute;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background:rgba(250,204,21,.08);
+    right:-50px;
+    top:-50px;
+}
+
+.bonus-title{
+    color:#cbd5e1;
+    font-size:13px;
+    letter-spacing:1px;
+}
+
+.bonus-value{
+    margin-top:8px;
+    font-size:54px;
+    line-height:1;
+    font-weight:900;
+    background:
+    linear-gradient(to bottom,#fff,#facc15);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.bonus-desc{
+    margin-top:8px;
+    color:#94a3b8;
+    font-size:13px;
+}
+
+/* BUTTONS */
+
+.buttons{
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.btn{
+    text-decoration:none;
+    text-align:center;
+    padding:18px;
+    border-radius:22px;
+    font-size:16px;
+    font-weight:700;
+    transition:.35s;
+}
+
+.btn-primary{
+    background:
+    linear-gradient(90deg,#facc15,#f59e0b);
+    color:#000;
+    box-shadow:
+    0 0 30px rgba(250,204,21,.35);
+}
+
+.btn-secondary{
+    background:
+    linear-gradient(90deg,#2563eb,#3b82f6);
+    color:#fff;
+    box-shadow:
+    0 0 30px rgba(37,99,235,.28);
+}
+
+.btn:hover{
+    transform:translateY(-4px) scale(1.02);
+}
+
+/* TIMER */
+
+.timer{
+    text-align:center;
+    color:#f87171;
+    font-size:15px;
+    font-weight:700;
+    padding-bottom:22px;
+}
+
+/* WD NOTIF */
+
+.wd-popup{
+    position:fixed;
+    bottom:24px;
+    left:24px;
+    background:
+    rgba(0,0,0,.55);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    color:#fff;
+    padding:14px 20px;
+    border-radius:18px;
+    font-size:13px;
+    z-index:99;
+    box-shadow:
+    0 0 25px rgba(0,0,0,.35);
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.top-title{
+    font-size:30px;
+}
+
+.banner{
+    height:auto;
+}
+
+.bonus-value{
+    font-size:42px;
+}
+
+}
+
 </style>
 </head>
-
 <body>
 
-<div class="container">
-  <div class="card">
+<div class="bg"></div>
 
-    <div class="title">🔥 BONUS 100% HARI INI</div>
-
-    <div class="hero">
-      <img src="https://i.imgur.com/KnFWtRZ.png">
-    </div>
-
-    <div class="warning">⚠️ SLOT HAMPIR PENUH! MASUK SEKARANG!</div>
-
-    <div id="live" class="live">🔥 124 Member sedang online</div>
-    <div class="wd">💰 WD terakhir Rp2.350.000</div>
-
-    <div onclick="openTelegram()" class="btn telegram">
-      📩 MASUK TELEGRAM SEKARANG
-    </div>
-
-    <div onclick="openWhatsApp()" class="btn whatsapp">
-      💬 CHAT ADMIN SEKARANG
-    </div>
-
-    <div id="countdown"></div>
-
-  </div>
+<div class="money">
+    <span>💸</span>
+    <span>💰</span>
+    <span>🪙</span>
+    <span>💎</span>
+    <span>💸</span>
 </div>
 
-<div class="float-gif" onclick="openWhatsApp()">
-  <img src="https://itslunamoon88.github.io/FOLLOW_WA/MS018.gif">
+<div class="popup">
+
+    <div class="top">
+
+        <div class="vip-badge">
+            👑 VIP MEMBER ONLY
+        </div>
+
+        <div class="top-title">
+            MAUSLOT VIP
+        </div>
+
+        <div class="top-sub">
+            Premium Member Access Hari Ini
+        </div>
+
+    </div>
+
+    <!-- VIP BANNER -->
+
+    <div class="vip-banner">
+
+        <!-- GANTI NAMA FILE SESUAI GAMBAR KAMU -->
+        <img src="https://i.imgur.com/b3EpJZb.jpeg">
+
+    </div>
+
+    <div class="info">
+
+        <div class="warning">
+            🔥 AKSES VIP TERBATAS HARI INI
+        </div>
+
+        <div class="online">
+            🟢 248 Member VIP sedang online
+        </div>
+
+        <div class="withdraw">
+            💰 WD terakhir Rp18.500.000
+        </div>
+
+    </div>
+
+    <div class="bonus-wrap">
+
+        <div class="bonus">
+
+            <div class="bonus-title">
+                CASHBACK HARIAN
+            </div>
+
+            <div class="bonus-value">
+                5%
+            </div>
+
+            <div class="bonus-desc">
+                Cashback aktif setiap hari untuk member VIP resmi.
+            </div>
+
+        </div>
+
+        <div class="bonus">
+
+            <div class="bonus-title">
+                BONUS CALLBACK
+            </div>
+
+            <div class="bonus-value">
+                10%
+            </div>
+
+            <div class="bonus-desc">
+                Reward eksklusif khusus member prioritas.
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <a href="#" class="btn btn-primary">
+            📩 MASUK TELEGRAM VIP
+        </a>
+
+        <a href="#" class="btn btn-secondary">
+            💬 CHAT ADMIN SEKARANG
+        </a>
+
+    </div>
+
+    <div class="timer">
+        ⏰ Promo berakhir : 18:20:17
+    </div>
+
 </div>
 
-<div id="popup" class="popup"></div>
-
-<script>
-// TELEGRAM
-function openTelegram(){
-  window.location.href="tg://resolve?domain=M4U_5L0T";
-  setTimeout(()=>{window.location.href="https://t.me/M4U_5L0T";},1200);
-}
-
-// WHATSAPP
-function openWhatsApp(){
-  window.location.href="whatsapp://send?phone=6281915349831";
-  setTimeout(()=>{window.location.href="https://wa.me/6281915349831";},1200);
-}
-
-// countdown
-let time=600;
-setInterval(()=>{
-  let m=Math.floor(time/60), s=time%60;
-  document.getElementById("countdown").innerHTML =
-  "⏰ Promo berakhir: "+m+":"+(s<10?"0"+s:s);
-  time--;
-},1000);
-
-// live counter
-setInterval(()=>{
-  let n = 110 + Math.floor(Math.random()*30);
-  document.getElementById("live").innerHTML =
-  "🔥 "+n+" Member sedang online";
-},3000);
-
-// popup WD
-let names=["Budi","Andi","Rizky","Doni","Agus","Fajar"];
-setInterval(()=>{
-  let popup=document.getElementById("popup");
-  let name=names[Math.floor(Math.random()*names.length)];
-  let amount=Math.floor(Math.random()*3000000)+500000;
-
-  popup.innerHTML="💰 "+name+" berhasil WD Rp"+amount.toLocaleString();
-  popup.style.display="block";
-
-  setTimeout(()=>popup.style.display="none",3000);
-},3500);
-
-// uang jatuh
-setInterval(()=>{
-  let el=document.createElement("div");
-  el.className="money";
-  el.style.left=Math.random()*100+"vw";
-  el.innerHTML="💸";
-  document.body.appendChild(el);
-  setTimeout(()=>el.remove(),4000);
-},800);
-</script>
+<div class="wd-popup">
+    💰 Andi berhasil WD Rp8.211.000
+</div>
 
 </body>
 </html>
