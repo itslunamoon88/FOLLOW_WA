@@ -6,6 +6,15 @@
 
 <title>MAUSLOT VIP</title>
 
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="MAUSLOT VIP">
+<meta property="og:description" content="Join VIP Eksklusif & Claim Benefit Member Sekarang">
+<meta property="og:image" content="https://itslunamoon88.github.io/img/banner.jpg">
+<meta property="og:url" content="https://itslunamoon88.github.io/FOLLOW_WA/">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
@@ -287,7 +296,7 @@ body{
     padding-bottom:22px;
 }
 
-/* WD NOTIF */
+/* WD POPUP */
 
 .wd-popup{
     position:fixed;
@@ -304,6 +313,18 @@ body{
     z-index:99;
     box-shadow:
     0 0 25px rgba(0,0,0,.35);
+    animation:slideUp .5s ease;
+}
+
+@keyframes slideUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 /* MOBILE */
@@ -314,10 +335,6 @@ body{
     font-size:30px;
 }
 
-.banner{
-    height:auto;
-}
-
 .bonus-value{
     font-size:42px;
 }
@@ -326,6 +343,7 @@ body{
 
 </style>
 </head>
+
 <body>
 
 <div class="bg"></div>
@@ -360,7 +378,6 @@ body{
 
     <div class="vip-banner">
 
-        <!-- GANTI NAMA FILE SESUAI GAMBAR KAMU -->
         <img src="https://i.imgur.com/b3EpJZb.jpeg">
 
     </div>
@@ -371,11 +388,11 @@ body{
             🔥 AKSES VIP TERBATAS HARI INI
         </div>
 
-        <div class="online">
+        <div class="online" id="online-user">
             🟢 248 Member VIP sedang online
         </div>
 
-        <div class="withdraw">
+        <div class="withdraw" id="wd-text">
             💰 WD terakhir Rp18.500.000
         </div>
 
@@ -419,25 +436,107 @@ body{
 
     <div class="buttons">
 
-        <a href="#" class="btn btn-primary">
+        <a href="https://t.me/usernamekamu" class="btn btn-primary">
             📩 MASUK TELEGRAM VIP
         </a>
 
-        <a href="#" class="btn btn-secondary">
+        <a href="https://wa.me/62895429572890" class="btn btn-secondary">
             💬 CHAT ADMIN SEKARANG
         </a>
 
     </div>
 
-    <div class="timer">
+    <div class="timer" id="countdown">
         ⏰ Promo berakhir : 18:20:17
     </div>
 
 </div>
 
-<div class="wd-popup">
+<div class="wd-popup" id="wd-popup">
     💰 Andi berhasil WD Rp8.211.000
 </div>
+
+<script>
+
+const names = [
+"Andi",
+"Rizky",
+"Budi",
+"Kevin",
+"Asep",
+"Doni",
+"Rama",
+"Fajar",
+"Agus",
+"Rio",
+"Yusuf",
+"Ilham",
+"Bagas",
+"Reza"
+];
+
+function randomAmount(){
+return Math.floor(Math.random() * 50000000 + 1000000)
+.toLocaleString('id-ID');
+}
+
+function updateWD(){
+
+const randomName =
+names[Math.floor(Math.random()*names.length)];
+
+const amount = randomAmount();
+
+document.getElementById("wd-text").innerHTML =
+`💰 WD terakhir Rp${amount}`;
+
+document.getElementById("wd-popup").innerHTML =
+`💰 ${randomName} berhasil WD Rp${amount}`;
+
+}
+
+setInterval(updateWD,3000);
+
+/* ONLINE USER */
+
+function updateOnline(){
+
+const total =
+Math.floor(Math.random() * 150 + 180);
+
+document.getElementById("online-user").innerHTML =
+`🟢 ${total} Member VIP sedang online`;
+
+}
+
+setInterval(updateOnline,4000);
+
+/* COUNTDOWN */
+
+let time = 18 * 60 * 60;
+
+function countdown(){
+
+let hours = Math.floor(time / 3600);
+let minutes = Math.floor((time % 3600) / 60);
+let seconds = time % 60;
+
+hours = String(hours).padStart(2,'0');
+minutes = String(minutes).padStart(2,'0');
+seconds = String(seconds).padStart(2,'0');
+
+document.getElementById("countdown").innerHTML =
+`⏰ Promo berakhir : ${hours}:${minutes}:${seconds}`;
+
+if(time > 0){
+time--;
+}
+
+}
+
+setInterval(countdown,1000);
+
+</script>
 
 </body>
 </html>
