@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MAUSLOT WORLD CUP 2026</title>
+<title>MAUSLOT FIFA WORLD CUP 2026</title>
 
 <meta property="og:title" content="MAUSLOT FIFA WORLD CUP 2026">
-<meta property="og:description" content="Pesta Bola Dunia Telah Dimulai! Raih Bonus Handicap 20% dan Bonus Deposit Sportsbook 10%">
-<meta property="og:image" content="URL_BANNER_WORLDCUP_KAMU">
+<meta property="og:description" content="Bonus Handicap 20%, Bonus Deposit Sportsbook 10% dan Bonus hingga 5 Juta selama FIFA World Cup 2026">
+<meta property="og:image" content="https://i.imgur.com/IZIl3XZ.jpeg">
 <meta property="og:type" content="website">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -22,7 +23,19 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
+:root{
+
+--gold:#FFD700;
+--gold2:#FFB800;
+--blue:#0D47FF;
+--dark:#07111F;
+--dark2:#0B1528;
+--white:#FFFFFF;
+
+}
+
 body{
+
 min-height:100vh;
 overflow:hidden;
 display:flex;
@@ -30,231 +43,652 @@ justify-content:center;
 align-items:center;
 background:#000;
 position:relative;
+
 }
+
+/* ==========================
+BACKGROUND
+========================== */
 
 .bg{
+
 position:fixed;
 inset:0;
+
 background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
-url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=1974');
+
+background:
+linear-gradient(
+rgba(2,8,23,.80),
+rgba(2,8,23,.95)
+),
+url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=2000');
+
 background-size:cover;
 background-position:center;
-transform:scale(1.1);
+
+transform:scale(1.08);
+
 filter:blur(2px);
+
 }
 
-.bg::after{
+.bg::before{
+
 content:'';
+
 position:absolute;
 inset:0;
+
 background:
-radial-gradient(circle at center,
-rgba(255,215,0,.25),
-transparent 60%);
+
+radial-gradient(
+circle at center,
+rgba(255,215,0,.18),
+transparent 45%
+);
+
 }
+
+/* ==========================
+FLOATING BALL
+========================== */
 
 .floating span{
+
 position:absolute;
-font-size:32px;
-animation:float 10s linear infinite;
+
+font-size:28px;
+
 opacity:.35;
+
+animation:float 12s linear infinite;
+
 }
 
-.floating span:nth-child(1){left:10%;top:100%;animation-delay:0s;}
-.floating span:nth-child(2){left:30%;top:100%;animation-delay:2s;}
-.floating span:nth-child(3){left:50%;top:100%;animation-delay:4s;}
-.floating span:nth-child(4){left:70%;top:100%;animation-delay:1s;}
-.floating span:nth-child(5){left:90%;top:100%;animation-delay:3s;}
+.floating span:nth-child(1){
+left:8%;
+top:100%;
+animation-delay:0s;
+}
+
+.floating span:nth-child(2){
+left:25%;
+top:100%;
+animation-delay:2s;
+}
+
+.floating span:nth-child(3){
+left:45%;
+top:100%;
+animation-delay:4s;
+}
+
+.floating span:nth-child(4){
+left:65%;
+top:100%;
+animation-delay:1s;
+}
+
+.floating span:nth-child(5){
+left:85%;
+top:100%;
+animation-delay:3s;
+}
 
 @keyframes float{
-0%{transform:translateY(0) rotate(0deg);}
-100%{transform:translateY(-120vh) rotate(360deg);}
+
+0%{
+transform:translateY(0) rotate(0deg);
 }
 
+100%{
+transform:translateY(-120vh) rotate(360deg);
+}
+
+}
+
+/* ==========================
+MAIN POPUP
+========================== */
+
 .popup{
+
 position:relative;
+
 width:95%;
-max-width:560px;
+
+max-width:650px;
+
 overflow:hidden;
+
 border-radius:35px;
+
 background:
-linear-gradient(145deg,
-rgba(5,10,25,.96),
-rgba(10,15,35,.98));
-border:1px solid rgba(255,215,0,.2);
-backdrop-filter:blur(16px);
+
+linear-gradient(
+145deg,
+rgba(7,17,31,.96),
+rgba(11,21,40,.98)
+);
+
+border:1px solid rgba(255,215,0,.15);
+
+backdrop-filter:blur(18px);
+
 box-shadow:
-0 0 40px rgba(255,215,0,.2),
-0 0 80px rgba(37,99,235,.2);
-animation:show .6s ease;
+
+0 0 50px rgba(13,71,255,.18),
+
+0 0 90px rgba(255,215,0,.12);
+
+animation:show .7s ease;
+
 }
 
 @keyframes show{
+
 from{
+
 opacity:0;
-transform:translateY(40px) scale(.95);
+
+transform:
+translateY(40px)
+scale(.95);
+
 }
+
 to{
+
 opacity:1;
-transform:translateY(0) scale(1);
-}
+
+transform:
+translateY(0)
+scale(1);
+
 }
 
-.top{
-padding:25px;
+}
+
+/* ==========================
+BANNER
+========================== */
+
+.hero-banner{
+
+padding:15px;
+
+}
+
+.hero-banner img{
+
+width:100%;
+
+display:block;
+
+border-radius:24px;
+
+border:2px solid rgba(255,215,0,.18);
+
+box-shadow:
+
+0 0 25px rgba(255,215,0,.10);
+
+}
+
+/* ==========================
+HEADER
+========================== */
+
+.header{
+
+padding:5px 25px 20px;
+
 text-align:center;
+
 }
 
-.badge{
+.event-badge{
+
 display:inline-block;
+
 padding:10px 20px;
-border-radius:50px;
-background:linear-gradient(90deg,#FFD700,#FFB300);
+
+border-radius:999px;
+
+background:
+
+linear-gradient(
+135deg,
+var(--gold),
+var(--gold2)
+);
+
 color:#000;
-font-weight:800;
+
 font-size:13px;
+
+font-weight:800;
+
+box-shadow:
+0 0 20px rgba(255,215,0,.25);
+
 }
 
 .title{
-font-size:38px;
-font-weight:900;
+
 margin-top:15px;
-line-height:1.1;
+
+font-size:38px;
+
+line-height:1;
+
+font-weight:900;
+
 background:
-linear-gradient(to bottom,#fff,#FFD700,#ffb300);
+
+linear-gradient(
+to bottom,
+#ffffff,
+#FFD700,
+#FFB800
+);
+
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
+
 }
 
 .subtitle{
+
 margin-top:10px;
-color:#d1d5db;
+
 font-size:14px;
-}
 
-.banner{
-padding:0 20px;
-}
+color:#CBD5E1;
 
-.banner img{
-width:100%;
-border-radius:25px;
-display:block;
-border:2px solid rgba(255,215,0,.2);
 }
+/* ==========================
+INFO SECTION
+========================== */
 
 .info{
-padding:20px;
+
+padding:0 25px 20px;
+
 text-align:center;
+
 }
 
-.info h3{
-color:#FFD700;
-font-size:18px;
+.live-online{
+
+color:#4ADE80;
+
+font-size:15px;
+
+font-weight:700;
+
 margin-bottom:8px;
+
 }
 
-.online{
-color:#4ade80;
+.live-win{
+
+color:var(--gold);
+
+font-size:15px;
+
 font-weight:600;
-margin-top:10px;
+
 }
 
-.withdraw{
-color:#FFD700;
-margin-top:6px;
+/* ==========================
+BONUS GRID
+========================== */
+
+.bonus-grid{
+
+padding:0 20px 20px;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:12px;
+
 }
 
-.bonus-container{
-padding:0 20px;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
+.bonus-card{
 
-.bonus{
-padding:20px;
-border-radius:20px;
+position:relative;
+
+overflow:hidden;
+
 background:
-linear-gradient(145deg,#101827,#0f172a);
-border:1px solid rgba(255,255,255,.05);
+
+linear-gradient(
+145deg,
+rgba(13,25,50,.95),
+rgba(8,15,35,.95)
+);
+
+border-radius:20px;
+
+padding:18px 10px;
+
+text-align:center;
+
+border:1px solid rgba(255,215,0,.12);
+
+transition:.35s;
+
 }
 
-.bonus-title{
-font-size:14px;
-color:#cbd5e1;
+.bonus-card:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+
+0 0 25px rgba(255,215,0,.18);
+
+}
+
+.bonus-card::before{
+
+content:'';
+
+position:absolute;
+
+width:120px;
+height:120px;
+
+border-radius:50%;
+
+background:
+rgba(255,215,0,.06);
+
+top:-50px;
+right:-50px;
+
+}
+
+.bonus-icon{
+
+font-size:22px;
+
+margin-bottom:8px;
+
 }
 
 .bonus-value{
-font-size:54px;
+
+font-size:34px;
+
 font-weight:900;
+
 line-height:1;
+
 background:
-linear-gradient(to bottom,#fff,#FFD700);
+
+linear-gradient(
+to bottom,
+#FFFFFF,
+#FFD700
+);
+
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
-margin-top:8px;
+
 }
 
-.bonus-desc{
-font-size:13px;
-color:#94a3b8;
+.bonus-label{
+
 margin-top:8px;
+
+font-size:12px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:#E5E7EB;
+
 }
+
+/* ==========================
+JACKPOT EVENT
+========================== */
+
+.event-jackpot{
+
+margin:0 20px 20px;
+
+padding:20px;
+
+border-radius:22px;
+
+text-align:center;
+
+background:
+
+linear-gradient(
+145deg,
+rgba(255,215,0,.08),
+rgba(13,71,255,.10)
+);
+
+border:1px solid rgba(255,215,0,.12);
+
+}
+
+.event-jackpot-title{
+
+font-size:14px;
+
+font-weight:700;
+
+color:#CBD5E1;
+
+letter-spacing:1px;
+
+}
+
+.event-jackpot-value{
+
+margin-top:10px;
+
+font-size:32px;
+
+font-weight:900;
+
+color:var(--gold);
+
+text-shadow:
+
+0 0 15px rgba(255,215,0,.35);
+
+}
+
+/* ==========================
+BUTTONS
+========================== */
 
 .buttons{
-padding:20px;
+
+padding:0 20px 20px;
+
 display:flex;
+
 flex-direction:column;
-gap:15px;
+
+gap:14px;
+
 }
 
 .btn{
+
+position:relative;
+
+overflow:hidden;
+
 display:block;
-padding:18px;
-border-radius:18px;
+
 text-decoration:none;
-font-weight:700;
+
+padding:18px;
+
+border-radius:18px;
+
+font-size:16px;
+
+font-weight:800;
+
 text-align:center;
+
 transition:.3s;
-}
 
-.btn-gold{
-background:
-linear-gradient(90deg,#FFD700,#FFB300);
-color:#000;
-}
-
-.btn-blue{
-background:
-linear-gradient(90deg,#2563eb,#3b82f6);
-color:#fff;
 }
 
 .btn:hover{
+
 transform:translateY(-3px);
+
 }
+
+.btn-primary{
+
+background:
+
+linear-gradient(
+90deg,
+#FFD700,
+#FFB800
+);
+
+color:#000;
+
+box-shadow:
+
+0 0 25px rgba(255,215,0,.25);
+
+}
+
+.btn-secondary{
+
+background:
+
+linear-gradient(
+90deg,
+#0D47FF,
+#2563EB
+);
+
+color:#FFF;
+
+box-shadow:
+
+0 0 25px rgba(13,71,255,.25);
+
+}
+
+/* Shine Effect */
+
+.btn::before{
+
+content:'';
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:60%;
+height:100%;
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.35),
+transparent
+);
+
+transform:skewX(-25deg);
+
+animation:shine 4s infinite;
+
+}
+
+@keyframes shine{
+
+0%{
+left:-120%;
+}
+
+100%{
+left:150%;
+}
+
+}
+
+/* ==========================
+COUNTDOWN
+========================== */
 
 .countdown{
-padding-bottom:20px;
+
+padding-bottom:25px;
+
 text-align:center;
-font-weight:700;
-color:#FFD700;
+
+font-size:15px;
+
+font-weight:800;
+
+color:var(--gold);
+
 }
 
+/* ==========================
+WD POPUP
+========================== */
+
 .wd-popup{
+
 position:fixed;
-bottom:20px;
+
 left:20px;
-background:rgba(0,0,0,.75);
-border:1px solid rgba(255,215,0,.2);
-padding:12px 18px;
-border-radius:15px;
-color:#fff;
-font-size:13px;
+bottom:20px;
+
+padding:14px 18px;
+
+border-radius:16px;
+
+background:
+
+rgba(0,0,0,.65);
+
 backdrop-filter:blur(10px);
+
+border:1px solid rgba(255,215,0,.12);
+
+color:#FFF;
+
+font-size:13px;
+
+z-index:999;
+
+box-shadow:
+
+0 0 20px rgba(0,0,0,.35);
+
 }
+
+/* ==========================
+MOBILE
+========================== */
 
 @media(max-width:600px){
 
@@ -262,195 +696,368 @@ backdrop-filter:blur(10px);
 font-size:28px;
 }
 
+.bonus-grid{
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:8px;
+
+padding:0 15px 15px;
+
+}
+
 .bonus-value{
-font-size:42px;
+font-size:26px;
+}
+
+.bonus-label{
+font-size:10px;
+}
+
+.event-jackpot-value{
+font-size:24px;
+}
+
+.btn{
+font-size:14px;
+padding:16px;
 }
 
 }
 
 </style>
-</head>
-
-<body>
-
 <div class="bg"></div>
 
+<!-- FLOATING ICON -->
+
 <div class="floating">
+
 <span>⚽</span>
 <span>🏆</span>
 <span>⚽</span>
 <span>🏆</span>
 <span>⚽</span>
+
 </div>
+
+<!-- MAIN POPUP -->
 
 <div class="popup">
 
-<div class="top">
+<!-- BANNER -->
 
-<div class="badge">
+<div class="hero-banner">
+
+<img src="https://i.imgur.com/IZIl3XZ.jpeg" alt="MAUSLOT WORLD CUP 2026">
+
+</div>
+
+<!-- HEADER -->
+
+<div class="header">
+
+<div class="event-badge">
+
 🏆 OFFICIAL WORLD CUP 2026 EVENT
+
 </div>
 
 <div class="title">
+
 MAUSLOT<br>
 WORLD CUP 2026
+
 </div>
 
 <div class="subtitle">
-PESTA BOLA DUNIA TELAH DIMULAI
-</div>
+
+Pesta Bola Dunia Telah Dimulai
 
 </div>
 
-<div class="banner">
-<img src="URL_BANNER_WORLDCUP_KAMU">
 </div>
+
+<!-- LIVE INFO -->
 
 <div class="info">
 
-<h3>⚽ EVENT RESMI FIFA WORLD CUP 2026</h3>
+<div class="live-online" id="online-user">
 
-<div class="online" id="online-user">
-🟢 352 Bettor sedang online
-</div>
-
-<div class="withdraw" id="wd-text">
-🏆 Kemenangan terakhir Rp12.500.000
-</div>
+🟢 628 Bettor Sedang Online
 
 </div>
 
-<div class="bonus-container">
+<div class="live-win" id="live-win">
 
-<div class="bonus">
-<div class="bonus-title">
-BONUS HANDICAP SINGLE BET
+💰 Kemenangan Terakhir Rp28.500.000
+
+</div>
+
+</div>
+
+<!-- BONUS GRID -->
+
+<div class="bonus-grid">
+
+<div class="bonus-card">
+
+<div class="bonus-icon">
+⚽
 </div>
 
 <div class="bonus-value">
 20%
 </div>
 
-<div class="bonus-desc">
-Bonus spesial World Cup 2026
-</div>
+<div class="bonus-label">
+HANDICAP
 </div>
 
-<div class="bonus">
-<div class="bonus-title">
-BONUS DEPOSIT SPORTSBOOK
+</div>
+
+<div class="bonus-card">
+
+<div class="bonus-icon">
+🎁
 </div>
 
 <div class="bonus-value">
 10%
 </div>
 
-<div class="bonus-desc">
-Khusus taruhan olahraga selama event berlangsung
-</div>
+<div class="bonus-label">
+DEPOSIT
 </div>
 
-<div class="bonus">
-<div class="bonus-title">
-BONUS MAKSIMAL
+</div>
+
+<div class="bonus-card">
+
+<div class="bonus-icon">
+💰
 </div>
 
 <div class="bonus-value">
-5 JT
+5JT
 </div>
 
-<div class="bonus-desc">
-Bonus hingga Rp5.000.000 selama World Cup 2026
-</div>
+<div class="bonus-label">
+BONUS
 </div>
 
 </div>
+
+</div>
+
+<!-- EVENT JACKPOT -->
+
+<div class="event-jackpot">
+
+<div class="event-jackpot-title">
+
+🏆 TOTAL HADIAH EVENT
+
+</div>
+
+<div class="event-jackpot-value" id="jackpot">
+
+Rp 2.587.456.892
+
+</div>
+
+</div>
+
+<!-- BUTTONS -->
 
 <div class="buttons">
 
-<a href="https://t.me/USERNAME" class="btn btn-gold">
+<a href="https://urlmsshorten.com/telegram-official"
+class="btn btn-primary">
+
 ⚽ KLAIM BONUS WORLD CUP
+
 </a>
 
-<a href="https://wa.me/628XXXXXXXXXX" class="btn btn-blue">
+<a href="https://urlmsshorten.com/whatsapp-official"
+class="btn btn-secondary">
+
 🎁 DAFTAR & DEPOSIT SEKARANG
+
 </a>
 
 </div>
+
+<!-- COUNTDOWN -->
 
 <div class="countdown" id="countdown">
-🏆 Event berakhir dalam 18:00:00
+
+⏰ EVENT BERAKHIR DALAM 18:00:00
+
 </div>
 
 </div>
+
+<!-- WD POPUP -->
 
 <div class="wd-popup" id="wd-popup">
-🏆 ArgentinaKing menang Rp8.200.000
-</div>
 
+🏆 ArgentinaKing Menang Rp18.500.000
+
+</div>
 <script>
 
-const names=[
-'ArgentinaKing',
-'BrazilBoss',
-'PortugalPro',
-'EnglandWin',
-'GoalHunter',
-'GoldenBoot',
-'MessiFans88',
-'PenaltyKing',
-'WorldCupX'
+/* ==========================
+WORLD CUP USERNAMES
+========================== */
+
+const users = [
+
+"ArgentinaKing",
+"BrazilBoss",
+"PortugalPro",
+"GoalHunter",
+"GoldenBoot",
+"PenaltyMaster",
+"EnglandWin",
+"FranceChampion",
+"SpainElite",
+"GermanyPower",
+"MessiFans88",
+"WorldCupX",
+"SoccerLegend",
+"Champions2026",
+"BetMaster",
+"TopScorer"
+
 ];
 
+/* ==========================
+RANDOM MONEY
+========================== */
+
 function randomAmount(){
-return Math.floor(Math.random()*50000000+1000000)
-.toLocaleString('id-ID');
+
+return Math.floor(
+Math.random() * 50000000 + 1000000
+).toLocaleString('id-ID');
+
 }
 
-function updateWD(){
+/* ==========================
+LIVE WIN UPDATE
+========================== */
 
-const name=
-names[Math.floor(Math.random()*names.length)];
+function updateWin(){
 
-const amount=randomAmount();
+const name =
+users[Math.floor(
+Math.random()*users.length
+)];
 
-document.getElementById('wd-text').innerHTML=
-`🏆 Kemenangan terakhir Rp${amount}`;
+const amount =
+randomAmount();
 
-document.getElementById('wd-popup').innerHTML=
-`⚽ ${name} menang taruhan Rp${amount}`;
+document.getElementById("live-win").innerHTML =
+`💰 Kemenangan Terakhir Rp${amount}`;
+
+document.getElementById("wd-popup").innerHTML =
+`🏆 ${name} Menang Rp${amount}`;
+
 }
 
-setInterval(updateWD,3000);
+setInterval(updateWin,3000);
+
+/* ==========================
+ONLINE USER
+========================== */
 
 function updateOnline(){
 
-const total=
-Math.floor(Math.random()*300+250);
+const total =
+Math.floor(
+Math.random()*300 + 450
+);
 
-document.getElementById('online-user').innerHTML=
-`🟢 ${total} Bettor World Cup sedang online`;
+document.getElementById("online-user").innerHTML =
+`🟢 ${total} Bettor Sedang Online`;
 
 }
 
 setInterval(updateOnline,4000);
 
-let time=64800;
+/* ==========================
+JACKPOT COUNTER
+========================== */
+
+let jackpot =
+2587456892;
+
+function updateJackpot(){
+
+jackpot += Math.floor(
+Math.random()*50000
+);
+
+document.getElementById("jackpot").innerHTML =
+"Rp " +
+jackpot.toLocaleString("id-ID");
+
+}
+
+setInterval(updateJackpot,2000);
+
+/* ==========================
+COUNTDOWN
+========================== */
+
+let time =
+18 * 60 * 60;
 
 function countdown(){
 
-let h=Math.floor(time/3600);
-let m=Math.floor((time%3600)/60);
-let s=time%60;
+let hours =
+Math.floor(time / 3600);
 
-document.getElementById('countdown').innerHTML=
-`🏆 Event berakhir dalam ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+let minutes =
+Math.floor(
+(time % 3600) / 60
+);
 
-if(time>0) time--;
+let seconds =
+time % 60;
+
+hours =
+String(hours).padStart(2,'0');
+
+minutes =
+String(minutes).padStart(2,'0');
+
+seconds =
+String(seconds).padStart(2,'0');
+
+document.getElementById("countdown").innerHTML =
+
+`⏰ EVENT BERAKHIR DALAM ${hours}:${minutes}:${seconds}`;
+
+if(time > 0){
+
+time--;
+
+}
 
 }
 
 setInterval(countdown,1000);
+
+/* ==========================
+INITIAL LOAD
+========================== */
+
+updateOnline();
+updateWin();
+updateJackpot();
+countdown();
 
 </script>
 
