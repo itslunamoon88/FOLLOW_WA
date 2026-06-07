@@ -4,335 +4,266 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MAUSLOT VIP</title>
+<title>MAUSLOT WORLD CUP 2026</title>
 
-<!-- OPEN GRAPH -->
-<meta property="og:title" content="MAUSLOT EXCLUSIVE">
-<meta property="og:description" content="Pengalaman premium dengan layanan terbaik dan keuntungan eksklusif untuk semua member">
-<meta property="og:image" content="https://i.imgur.com/0iwFBoB.jpeg">
-<meta property="og:url" content="https://itslunamoon88.github.io/FOLLOW_WA/">
+<meta property="og:title" content="MAUSLOT FIFA WORLD CUP 2026">
+<meta property="og:description" content="Pesta Bola Dunia Telah Dimulai! Raih Bonus Handicap 20% dan Bonus Deposit Sportsbook 10%">
+<meta property="og:image" content="URL_BANNER_WORLDCUP_KAMU">
 <meta property="og:type" content="website">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-    min-height:100vh;
-    overflow:hidden;
-    background:#000;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:relative;
+min-height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#000;
+position:relative;
 }
-
-/* BACKGROUND */
 
 .bg{
-    position:fixed;
-    inset:0;
-    background:
-    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.78)),
-    url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1974&auto=format&fit=crop');
-    background-size:cover;
-    background-position:center;
-    filter:blur(2px);
-    transform:scale(1.05);
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=1974');
+background-size:cover;
+background-position:center;
+transform:scale(1.1);
+filter:blur(2px);
 }
 
-.bg::before{
-    content:'';
-    position:absolute;
-    inset:0;
-    background:
-    radial-gradient(circle at top,
-    rgba(37,99,235,.35),
-    transparent 40%);
+.bg::after{
+content:'';
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at center,
+rgba(255,215,0,.25),
+transparent 60%);
 }
 
-/* FLOATING MONEY */
-
-.money span{
-    position:absolute;
-    font-size:26px;
-    animation:float 10s linear infinite;
-    opacity:.35;
+.floating span{
+position:absolute;
+font-size:32px;
+animation:float 10s linear infinite;
+opacity:.35;
 }
 
-.money span:nth-child(1){left:10%;top:100%;animation-delay:0s;}
-.money span:nth-child(2){left:25%;top:100%;animation-delay:2s;}
-.money span:nth-child(3){left:40%;top:100%;animation-delay:4s;}
-.money span:nth-child(4){left:60%;top:100%;animation-delay:1s;}
-.money span:nth-child(5){left:80%;top:100%;animation-delay:3s;}
+.floating span:nth-child(1){left:10%;top:100%;animation-delay:0s;}
+.floating span:nth-child(2){left:30%;top:100%;animation-delay:2s;}
+.floating span:nth-child(3){left:50%;top:100%;animation-delay:4s;}
+.floating span:nth-child(4){left:70%;top:100%;animation-delay:1s;}
+.floating span:nth-child(5){left:90%;top:100%;animation-delay:3s;}
 
 @keyframes float{
-    0%{
-        transform:translateY(0) rotate(0deg);
-    }
-    100%{
-        transform:translateY(-120vh) rotate(360deg);
-    }
+0%{transform:translateY(0) rotate(0deg);}
+100%{transform:translateY(-120vh) rotate(360deg);}
 }
 
-/* POPUP */
-
 .popup{
-    position:relative;
-    width:95%;
-    max-width:520px;
-    border-radius:38px;
-    overflow:hidden;
-    background:
-    linear-gradient(145deg,
-    rgba(8,15,35,.96),
-    rgba(5,10,20,.98));
-    border:1px solid rgba(255,255,255,.08);
-    backdrop-filter:blur(16px);
-    box-shadow:
-    0 0 60px rgba(37,99,235,.35),
-    0 0 120px rgba(250,204,21,.10);
-    animation:show .7s ease;
+position:relative;
+width:95%;
+max-width:560px;
+overflow:hidden;
+border-radius:35px;
+background:
+linear-gradient(145deg,
+rgba(5,10,25,.96),
+rgba(10,15,35,.98));
+border:1px solid rgba(255,215,0,.2);
+backdrop-filter:blur(16px);
+box-shadow:
+0 0 40px rgba(255,215,0,.2),
+0 0 80px rgba(37,99,235,.2);
+animation:show .6s ease;
 }
 
 @keyframes show{
-    from{
-        opacity:0;
-        transform:translateY(40px) scale(.95);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0) scale(1);
-    }
+from{
+opacity:0;
+transform:translateY(40px) scale(.95);
 }
-
-/* TOP */
+to{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+}
 
 .top{
-    padding:26px 26px 20px;
-    text-align:center;
+padding:25px;
+text-align:center;
 }
 
-.vip-badge{
-    display:inline-block;
-    padding:10px 22px;
-    border-radius:999px;
-    background:
-    linear-gradient(135deg,#facc15,#f59e0b);
-    color:#000;
-    font-size:13px;
-    font-weight:800;
-    box-shadow:
-    0 0 25px rgba(250,204,21,.35);
+.badge{
+display:inline-block;
+padding:10px 20px;
+border-radius:50px;
+background:linear-gradient(90deg,#FFD700,#FFB300);
+color:#000;
+font-weight:800;
+font-size:13px;
 }
 
-.top-title{
-    margin-top:16px;
-    font-size:38px;
-    line-height:1;
-    font-weight:900;
-    background:
-    linear-gradient(to bottom,#fff,#facc15,#f59e0b);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+.title{
+font-size:38px;
+font-weight:900;
+margin-top:15px;
+line-height:1.1;
+background:
+linear-gradient(to bottom,#fff,#FFD700,#ffb300);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
-.top-sub{
-    margin-top:10px;
-    color:#cbd5e1;
-    font-size:14px;
+.subtitle{
+margin-top:10px;
+color:#d1d5db;
+font-size:14px;
 }
 
-/* VIP BANNER */
-
-.vip-banner{
-    margin:0 24px;
-    border-radius:28px;
-    overflow:hidden;
-    border:1px solid rgba(255,255,255,.08);
-    box-shadow:
-    0 0 30px rgba(250,204,21,.12);
+.banner{
+padding:0 20px;
 }
 
-.vip-banner img{
-    width:100%;
-    display:block;
-    object-fit:cover;
+.banner img{
+width:100%;
+border-radius:25px;
+display:block;
+border:2px solid rgba(255,215,0,.2);
 }
-
-/* INFO */
 
 .info{
-    padding:22px 26px;
-    text-align:center;
+padding:20px;
+text-align:center;
 }
 
-.warning{
-    color:#facc15;
-    font-weight:700;
-    font-size:16px;
+.info h3{
+color:#FFD700;
+font-size:18px;
+margin-bottom:8px;
 }
 
 .online{
-    margin-top:14px;
-    color:#4ade80;
-    font-size:15px;
+color:#4ade80;
+font-weight:600;
+margin-top:10px;
 }
 
 .withdraw{
-    margin-top:6px;
-    color:#fcd34d;
-    font-size:15px;
+color:#FFD700;
+margin-top:6px;
 }
 
-/* BONUS BOX */
-
-.bonus-wrap{
-    padding:0 24px;
-    display:flex;
-    flex-direction:column;
-    gap:16px;
+.bonus-container{
+padding:0 20px;
+display:flex;
+flex-direction:column;
+gap:15px;
 }
 
 .bonus{
-    position:relative;
-    overflow:hidden;
-    padding:22px;
-    border-radius:24px;
-    background:
-    linear-gradient(145deg,#111827,#0f172a);
-    border:1px solid rgba(255,255,255,.06);
-}
-
-.bonus::before{
-    content:'';
-    position:absolute;
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    background:rgba(250,204,21,.08);
-    right:-50px;
-    top:-50px;
+padding:20px;
+border-radius:20px;
+background:
+linear-gradient(145deg,#101827,#0f172a);
+border:1px solid rgba(255,255,255,.05);
 }
 
 .bonus-title{
-    color:#cbd5e1;
-    font-size:13px;
-    letter-spacing:1px;
+font-size:14px;
+color:#cbd5e1;
 }
 
 .bonus-value{
-    margin-top:8px;
-    font-size:54px;
-    line-height:1;
-    font-weight:900;
-    background:
-    linear-gradient(to bottom,#fff,#facc15);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+font-size:54px;
+font-weight:900;
+line-height:1;
+background:
+linear-gradient(to bottom,#fff,#FFD700);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-top:8px;
 }
 
 .bonus-desc{
-    margin-top:8px;
-    color:#94a3b8;
-    font-size:13px;
+font-size:13px;
+color:#94a3b8;
+margin-top:8px;
 }
 
-/* BUTTONS */
-
 .buttons{
-    padding:24px;
-    display:flex;
-    flex-direction:column;
-    gap:16px;
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:15px;
 }
 
 .btn{
-    text-decoration:none;
-    text-align:center;
-    padding:18px;
-    border-radius:22px;
-    font-size:16px;
-    font-weight:700;
-    transition:.35s;
+display:block;
+padding:18px;
+border-radius:18px;
+text-decoration:none;
+font-weight:700;
+text-align:center;
+transition:.3s;
 }
 
-.btn-primary{
-    background:
-    linear-gradient(90deg,#facc15,#f59e0b);
-    color:#000;
-    box-shadow:
-    0 0 30px rgba(250,204,21,.35);
+.btn-gold{
+background:
+linear-gradient(90deg,#FFD700,#FFB300);
+color:#000;
 }
 
-.btn-secondary{
-    background:
-    linear-gradient(90deg,#2563eb,#3b82f6);
-    color:#fff;
-    box-shadow:
-    0 0 30px rgba(37,99,235,.28);
+.btn-blue{
+background:
+linear-gradient(90deg,#2563eb,#3b82f6);
+color:#fff;
 }
 
 .btn:hover{
-    transform:translateY(-4px) scale(1.02);
+transform:translateY(-3px);
 }
 
-/* TIMER */
-
-.timer{
-    text-align:center;
-    color:#f87171;
-    font-size:15px;
-    font-weight:700;
-    padding-bottom:22px;
+.countdown{
+padding-bottom:20px;
+text-align:center;
+font-weight:700;
+color:#FFD700;
 }
-
-/* WD POPUP */
 
 .wd-popup{
-    position:fixed;
-    bottom:24px;
-    left:24px;
-    background:
-    rgba(0,0,0,.55);
-    border:1px solid rgba(255,255,255,.08);
-    backdrop-filter:blur(12px);
-    color:#fff;
-    padding:14px 20px;
-    border-radius:18px;
-    font-size:13px;
-    z-index:99;
-    box-shadow:
-    0 0 25px rgba(0,0,0,.35);
-    animation:slideUp .5s ease;
+position:fixed;
+bottom:20px;
+left:20px;
+background:rgba(0,0,0,.75);
+border:1px solid rgba(255,215,0,.2);
+padding:12px 18px;
+border-radius:15px;
+color:#fff;
+font-size:13px;
+backdrop-filter:blur(10px);
 }
-
-@keyframes slideUp{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-/* MOBILE */
 
 @media(max-width:600px){
 
-.top-title{
-    font-size:30px;
+.title{
+font-size:28px;
 }
 
 .bonus-value{
-    font-size:42px;
+font-size:42px;
 }
 
 }
@@ -344,189 +275,178 @@ body{
 
 <div class="bg"></div>
 
-<div class="money">
-    <span>💸</span>
-    <span>💰</span>
-    <span>🪙</span>
-    <span>💎</span>
-    <span>💸</span>
+<div class="floating">
+<span>⚽</span>
+<span>🏆</span>
+<span>⚽</span>
+<span>🏆</span>
+<span>⚽</span>
 </div>
 
 <div class="popup">
 
-    <div class="top">
+<div class="top">
 
-        <div class="vip-badge">
-            👑 VIP MEMBER ONLY
-        </div>
+<div class="badge">
+🏆 OFFICIAL WORLD CUP 2026 EVENT
+</div>
 
-        <div class="top-title">
-            MAUSLOT VIP
-        </div>
+<div class="title">
+MAUSLOT<br>
+WORLD CUP 2026
+</div>
 
-        <div class="top-sub">
-            Premium Member Access Hari Ini
-        </div>
+<div class="subtitle">
+PESTA BOLA DUNIA TELAH DIMULAI
+</div>
 
-    </div>
+</div>
 
-    <!-- VIP BANNER -->
+<div class="banner">
+<img src="URL_BANNER_WORLDCUP_KAMU">
+</div>
 
-    <div class="vip-banner">
+<div class="info">
 
-        <img src="https://i.imgur.com/b3EpJZb.jpeg">
+<h3>⚽ EVENT RESMI FIFA WORLD CUP 2026</h3>
 
-    </div>
+<div class="online" id="online-user">
+🟢 352 Bettor sedang online
+</div>
 
-    <div class="info">
+<div class="withdraw" id="wd-text">
+🏆 Kemenangan terakhir Rp12.500.000
+</div>
 
-        <div class="warning">
-            🔥 AKSES VIP TERBATAS HARI INI
-        </div>
+</div>
 
-        <div class="online" id="online-user">
-            🟢 248 Member VIP sedang online
-        </div>
+<div class="bonus-container">
 
-        <div class="withdraw" id="wd-text">
-            💰 WD terakhir Rp18.500.000
-        </div>
+<div class="bonus">
+<div class="bonus-title">
+BONUS HANDICAP SINGLE BET
+</div>
 
-    </div>
+<div class="bonus-value">
+20%
+</div>
 
-    <div class="bonus-wrap">
+<div class="bonus-desc">
+Bonus spesial World Cup 2026
+</div>
+</div>
 
-        <div class="bonus">
+<div class="bonus">
+<div class="bonus-title">
+BONUS DEPOSIT SPORTSBOOK
+</div>
 
-            <div class="bonus-title">
-                CASHBACK HARIAN
-            </div>
+<div class="bonus-value">
+10%
+</div>
 
-            <div class="bonus-value">
-                5%
-            </div>
+<div class="bonus-desc">
+Khusus taruhan olahraga selama event berlangsung
+</div>
+</div>
 
-            <div class="bonus-desc">
-                Cashback aktif setiap hari untuk member VIP resmi.
-            </div>
+<div class="bonus">
+<div class="bonus-title">
+BONUS MAKSIMAL
+</div>
 
-        </div>
+<div class="bonus-value">
+5 JT
+</div>
 
-        <div class="bonus">
+<div class="bonus-desc">
+Bonus hingga Rp5.000.000 selama World Cup 2026
+</div>
+</div>
 
-            <div class="bonus-title">
-                BONUS CALLBACK
-            </div>
+</div>
 
-            <div class="bonus-value">
-                10%
-            </div>
+<div class="buttons">
 
-            <div class="bonus-desc">
-                Reward eksklusif khusus member prioritas.
-            </div>
+<a href="https://t.me/USERNAME" class="btn btn-gold">
+⚽ KLAIM BONUS WORLD CUP
+</a>
 
-        </div>
+<a href="https://wa.me/628XXXXXXXXXX" class="btn btn-blue">
+🎁 DAFTAR & DEPOSIT SEKARANG
+</a>
 
-    </div>
+</div>
 
-    <div class="buttons">
-
-        <a href="https://t.me/usernamekamu" class="btn btn-primary">
-            📩 MASUK TELEGRAM VIP
-        </a>
-
-        <a href="https://wa.me/62895429572890" class="btn btn-secondary">
-            💬 CHAT ADMIN SEKARANG
-        </a>
-
-    </div>
-
-    <div class="timer" id="countdown">
-        ⏰ Promo berakhir : 18:20:17
-    </div>
+<div class="countdown" id="countdown">
+🏆 Event berakhir dalam 18:00:00
+</div>
 
 </div>
 
 <div class="wd-popup" id="wd-popup">
-    💰 Andi berhasil WD Rp8.211.000
+🏆 ArgentinaKing menang Rp8.200.000
 </div>
 
 <script>
 
-const names = [
-"Andi",
-"Rizky",
-"Budi",
-"Kevin",
-"Asep",
-"Doni",
-"Rama",
-"Fajar",
-"Agus",
-"Rio",
-"Yusuf",
-"Ilham",
-"Bagas",
-"Reza"
+const names=[
+'ArgentinaKing',
+'BrazilBoss',
+'PortugalPro',
+'EnglandWin',
+'GoalHunter',
+'GoldenBoot',
+'MessiFans88',
+'PenaltyKing',
+'WorldCupX'
 ];
 
 function randomAmount(){
-return Math.floor(Math.random() * 50000000 + 1000000)
+return Math.floor(Math.random()*50000000+1000000)
 .toLocaleString('id-ID');
 }
 
 function updateWD(){
 
-const randomName =
+const name=
 names[Math.floor(Math.random()*names.length)];
 
-const amount = randomAmount();
+const amount=randomAmount();
 
-document.getElementById("wd-text").innerHTML =
-`💰 WD terakhir Rp${amount}`;
+document.getElementById('wd-text').innerHTML=
+`🏆 Kemenangan terakhir Rp${amount}`;
 
-document.getElementById("wd-popup").innerHTML =
-`💰 ${randomName} berhasil WD Rp${amount}`;
-
+document.getElementById('wd-popup').innerHTML=
+`⚽ ${name} menang taruhan Rp${amount}`;
 }
 
 setInterval(updateWD,3000);
 
-/* ONLINE USER */
-
 function updateOnline(){
 
-const total =
-Math.floor(Math.random() * 150 + 180);
+const total=
+Math.floor(Math.random()*300+250);
 
-document.getElementById("online-user").innerHTML =
-`🟢 ${total} Member VIP sedang online`;
+document.getElementById('online-user').innerHTML=
+`🟢 ${total} Bettor World Cup sedang online`;
 
 }
 
 setInterval(updateOnline,4000);
 
-/* COUNTDOWN */
-
-let time = 18 * 60 * 60;
+let time=64800;
 
 function countdown(){
 
-let hours = Math.floor(time / 3600);
-let minutes = Math.floor((time % 3600) / 60);
-let seconds = time % 60;
+let h=Math.floor(time/3600);
+let m=Math.floor((time%3600)/60);
+let s=time%60;
 
-hours = String(hours).padStart(2,'0');
-minutes = String(minutes).padStart(2,'0');
-seconds = String(seconds).padStart(2,'0');
+document.getElementById('countdown').innerHTML=
+`🏆 Event berakhir dalam ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
 
-document.getElementById("countdown").innerHTML =
-`⏰ Promo berakhir : ${hours}:${minutes}:${seconds}`;
-
-if(time > 0){
-time--;
-}
+if(time>0) time--;
 
 }
 
